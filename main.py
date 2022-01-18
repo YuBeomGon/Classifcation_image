@@ -361,7 +361,7 @@ def validate(val_loader, model, criterion, args):
 def save_checkpoint(state, is_best, filename='checkpoint.pth'):
     torch.save(state, filename +'/checkpoint.pth' )
     if is_best:
-        shutil.copyfile(filename +'/checkpoint.pth', 'model_best.pth')
+        shutil.copyfile(filename +'/checkpoint.pth', filename +'/model_best.pth')
 
 class Summary(Enum):
     NONE = 0
