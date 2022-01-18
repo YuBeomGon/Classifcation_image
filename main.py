@@ -76,7 +76,7 @@ parser.add_argument('--multiprocessing-distributed', action='store_true',
                          'N processes per node, which has N GPUs. This is the '
                          'fastest way to use PyTorch for either single node or '
                          'multi node data parallel training')
-parser.add_argument('--saved_dir', default='trained_models/coatnet/', type=str,
+parser.add_argument('--saved_dir', default='trained_models/coatnet_custom/', type=str,
                     help='dir used to saved model')
 
 best_acc1 = 0
@@ -361,7 +361,7 @@ def validate(val_loader, model, criterion, args):
 def save_checkpoint(state, is_best, filename='checkpoint.pth'):
     torch.save(state, filename +'/checkpoint.pth' )
     if is_best:
-        shutil.copyfile(filename +'/checkpoint.pth', 'model_best.pth')
+        shutil.copyfile(filename +'/checkpoint.pth', filename +'/model_best.pth')
 
 class Summary(Enum):
     NONE = 0
