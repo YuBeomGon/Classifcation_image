@@ -68,7 +68,12 @@ class ScaledDotProductAttention(nn.Module):
             att = att * attention_weights
         if attention_mask is not None:
             att = att.masked_fill(attention_mask, -np.inf)
+            
+        index = torch.ones(scores.shape, device='cuda')
+        mindex = torch.where(scores < 0, -1*index, index)
+        att = att * mindex
         att = torch.softmax(att, -1)
+        att = att * mindex
         att=self.dropout(att)
 
         out = torch.matmul(att, v).permute(0, 2, 1, 3).contiguous().view(b_s, nq, self.h * self.d_v)  # (b_s, nq, h*d_v)
