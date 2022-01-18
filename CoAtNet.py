@@ -54,6 +54,7 @@ class CoAtNet(nn.Module):
         
         self.fc = nn.Linear(in_features=768, out_features=1000)
         self.avgpool = nn.AdaptiveAvgPool2d((1, 1))
+        self.softmax = nn.Softmax(dim=-1)
 
 
     def forward(self, x) :
@@ -80,6 +81,7 @@ class CoAtNet(nn.Module):
         x = self.avgpool(x)
         x = torch.flatten(x, 1)
         x = self.fc(x)
+        x = self.softmax(x)
 
         return x
 

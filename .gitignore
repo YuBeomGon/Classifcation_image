@@ -1,0 +1,7 @@
+.ipynb_checkpoints/
+ILSVRC
+__pycache__/
+coatnet.log
+custom_coatnet.log
+trained_models/*
+notebooks/.ipynb_checkpoints/*
