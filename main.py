@@ -19,7 +19,13 @@ import torchvision.transforms as transforms
 import torchvision.datasets as datasets
 import torchvision.models as models
 
-from CoAtNet import CoAtNet
+# from CoAtNet import CoAtNet
+from coatnet import *
+
+import os
+os.environ["CUDA_DEVICE_ORDER"]="PCI_BUS_ID"   
+os.environ["CUDA_VISIBLE_DEVICES"]="0,1,2"
+
 
 model_names = sorted(name for name in models.__dict__
     if name.islower() and not name.startswith("__")
@@ -140,7 +146,8 @@ def main_worker(gpu, ngpus_per_node, args):
 #     else:
 #         print("=> creating model '{}'".format(args.arch))
 #         model = models.__dict__[args.arch]()
-    model = CoAtNet(3,224)
+#     model = CoAtNet(3,224)
+    model = coatnet_0()
 
     if not torch.cuda.is_available():
         print('using CPU, this will be slow')
