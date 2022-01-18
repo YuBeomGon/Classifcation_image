@@ -155,7 +155,7 @@ class Attention(nn.Module):
         dots = dots + relative_bias
         
         index = torch.ones(dots.shape, device='cuda')
-        mindex = torch.where(att < 0, -1*index, index)
+        mindex = torch.where(dots < 0, -1*index, index)
         dots = dots * mindex
 
         attn = self.attend(dots)
