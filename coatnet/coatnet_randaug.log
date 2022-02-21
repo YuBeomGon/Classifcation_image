@@ -1,0 +1,24 @@
+Use GPU: 2 for training
+initialized
+Use GPU: 1 for training
+initialized
+Use GPU: 0 for training
+initialized
+Epoch: [0][   0/5025]	Time 76.980 (76.980)	Data 72.523 (72.523)	Loss 9.2907e+00 (9.2907e+00)	Acc@1   0.00 (  0.00)	Acc@5   1.18 (  1.18)
+Epoch: [0][1000/5025]	Time  0.261 ( 0.343)	Data  0.000 ( 0.073)	Loss nan (nan)	Acc@1   0.00 (  0.11)	Acc@5   2.35 (  0.52)
+Epoch: [0][2000/5025]	Time  0.261 ( 0.306)	Data  0.000 ( 0.037)	Loss nan (nan)	Acc@1   0.00 (  0.10)	Acc@5   1.18 (  0.52)
+Epoch: [0][3000/5025]	Time  0.259 ( 0.293)	Data  0.000 ( 0.024)	Loss nan (nan)	Acc@1   0.00 (  0.09)	Acc@5   0.00 (  0.52)
+Epoch: [0][4000/5025]	Time  0.260 ( 0.287)	Data  0.000 ( 0.018)	Loss nan (nan)	Acc@1   0.00 (  0.10)	Acc@5   1.18 (  0.52)
+Epoch: [0][5000/5025]	Time  0.261 ( 0.283)	Data  0.000 ( 0.015)	Loss nan (nan)	Acc@1   0.00 (  0.10)	Acc@5   0.00 (  0.51)
+Epoch: [0][   0/5025]	Time 76.981 (76.981)	Data 70.533 (70.533)	Loss 9.1919e+00 (9.1919e+00)	Acc@1   0.00 (  0.00)	Acc@5   0.00 (  0.00)
+Epoch: [0][1000/5025]	Time  0.262 ( 0.343)	Data  0.000 ( 0.071)	Loss nan (nan)	Acc@1   0.00 (  0.11)	Acc@5   0.00 (  0.51)
+Epoch: [0][2000/5025]	Time  0.260 ( 0.306)	Data  0.000 ( 0.035)	Loss nan (nan)	Acc@1   0.00 (  0.10)	Acc@5   0.00 (  0.49)
+Epoch: [0][3000/5025]	Time  0.269 ( 0.293)	Data  0.000 ( 0.024)	Loss nan (nan)	Acc@1   0.00 (  0.10)	Acc@5   0.00 (  0.50)
+Epoch: [0][4000/5025]	Time  0.260 ( 0.287)	Data  0.000 ( 0.018)	Loss nan (nan)	Acc@1   0.00 (  0.10)	Acc@5   1.18 (  0.50)
+Epoch: [0][5000/5025]	Time  0.260 ( 0.283)	Data  0.000 ( 0.014)	Loss nan (nan)	Acc@1   0.00 (  0.10)	Acc@5   0.00 (  0.50)
+Epoch: [0][   0/5025]	Time 76.983 (76.983)	Data 70.925 (70.925)	Loss 9.6004e+00 (9.6004e+00)	Acc@1   0.00 (  0.00)	Acc@5   0.00 (  0.00)
+Epoch: [0][1000/5025]	Time  0.261 ( 0.343)	Data  0.000 ( 0.071)	Loss nan (nan)	Acc@1   0.00 (  0.11)	Acc@5   0.00 (  0.52)
+Epoch: [0][2000/5025]	Time  0.260 ( 0.306)	Data  0.000 ( 0.036)	Loss nan (nan)	Acc@1   0.00 (  0.10)	Acc@5   1.18 (  0.51)
+Epoch: [0][3000/5025]	Time  0.269 ( 0.293)	Data  0.000 ( 0.024)	Loss nan (nan)	Acc@1   0.00 (  0.10)	Acc@5   0.00 (  0.50)
+Epoch: [0][4000/5025]	Time  0.262 ( 0.287)	Data  0.000 ( 0.018)	Loss nan (nan)	Acc@1   0.00 (  0.10)	Acc@5   0.00 (  0.51)
+Epoch: [0][5000/5025]	Time  0.259 ( 0.283)	Data  0.000 ( 0.014)	Loss nan (nan)	Acc@1   0.00 (  0.11)	Acc@5   1.18 (  0.51)
